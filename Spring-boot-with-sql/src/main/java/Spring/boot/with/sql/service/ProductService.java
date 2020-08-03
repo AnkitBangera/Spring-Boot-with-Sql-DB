@@ -30,4 +30,8 @@ public String deleteProduct(int id) {
 	return "Deleted product "+id;
 }
 
+public List<Product> getProductByTitle(){
+	return repository.findByTitle("Noise x pro");
+}
+
 }
